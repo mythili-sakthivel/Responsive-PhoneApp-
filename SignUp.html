@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXTRIP - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+    <!-- Header -->
+    <header class="auth-header">
+        <div class="auth-brand">NEXTRIP</div>
+        <p class="auth-tagline">Your Ultimate Travel Companion</p>
+    </header>
+
+    <main class="auth-main">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-80">
+                <div class="col-12 col-md-8 col-lg-6">
+
+                    <div class="auth-card">
+                        <div class="auth-card-header">
+                            <h2>Create Account</h2>
+                            <p>Join NEXTRIP and start your adventure</p>
+                        </div>
+
+                        <form id="signupForm" novalidate>
+
+                            <!-- Full Name -->
+                            <div class="form-group mb-3">
+                                <label for="fullName" class="form-label auth-label">Full Name</label>
+                                <input type="text" class="form-control auth-input" id="fullName" name="fullName" placeholder="Enter your full name">
+                                <span class="error-msg" id="fullNameError"></span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group mb-3">
+                                <label for="signupEmail" class="form-label auth-label">Email Address</label>
+                                <input type="email" class="form-control auth-input" id="signupEmail" name="email" placeholder="example@mail.com">
+                                <span class="error-msg" id="emailError"></span>
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="form-group mb-3">
+                                <label for="phone" class="form-label auth-label">Phone Number</label>
+                                <input type="tel" class="form-control auth-input" id="phone" name="phone" placeholder="10-digit phone number" maxlength="10">
+                                <span class="error-msg" id="phoneError"></span>
+                            </div>
+
+                            <!-- Location / City -->
+                            <div class="form-group mb-3">
+                                <label for="location" class="form-label auth-label">Location / City</label>
+                                <input type="text" class="form-control auth-input" id="location" name="location" placeholder="Your city">
+                                <span class="error-msg" id="locationError"></span>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group mb-3">
+                                <label for="signupPassword" class="form-label auth-label">Password</label>
+                                <div class="password-wrapper">
+                                    <input type="password" class="form-control auth-input" id="signupPassword" name="password" placeholder="Min 8 chars, letters & numbers">
+                                    <button type="button" class="toggle-password" data-target="signupPassword" aria-label="Toggle password">
+                                        <span class="eye-icon" id="signupPasswordEye">👁️</span>
+                                    </button>
+                                </div>
+                                <span class="error-msg" id="passwordError"></span>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="form-group mb-4">
+                                <label for="confirmPassword" class="form-label auth-label">Confirm Password</label>
+                                <div class="password-wrapper">
+                                    <input type="password" class="form-control auth-input" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password">
+                                    <button type="button" class="toggle-password" data-target="confirmPassword" aria-label="Toggle confirm password">
+                                        <span class="eye-icon" id="confirmPasswordEye">👁️</span>
+                                    </button>
+                                </div>
+                                <span class="error-msg" id="confirmPasswordError"></span>
+                            </div>
+
+                            <button type="submit" class="btn auth-btn w-100">Create Account</button>
+                            <span class="success-msg" id="signupSuccess"></span>
+
+                        </form>
+
+                        <div class="auth-redirect">
+                            Already have an account? <a href="SignIn.html" class="auth-link">Sign In</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="auth-footer">
+        <p>&copy; 2024 NEXTRIP. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

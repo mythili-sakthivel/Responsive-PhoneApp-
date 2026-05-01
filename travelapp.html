@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXTRIP - Adventure Awaits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container-header">
+            <div class="brand">NEXTRIP</div>
+            <nav class="navbar">
+                <a href="#home" class="nav-btn">Home</a>
+                <a href="#destinations" class="nav-btn">Destinations</a>
+                <a href="#features" class="nav-btn">Features</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+            </nav>
+            <buttonclass="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-btn">Home</a>
+        <a href="#destinations" class="mobile-btn">Destinations</a>
+        <a href="#features" class="mobile-btn">Features</a>
+        <a href="#contact" class="mobile-btn">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=800&fit=crop" alt="Travel Background" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Adventure Awaits You</h1>
+                <p class="hero-tagline">Explore the world with NEXTRIP - Your ultimate travel companion</p>
+                <a href="#destinations" class="btn-primary">Discover Destinations</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose NEXTRIP?</h2>
+                <p class="section-desc">Experience travel like never before</p>
+
+                <div class="features-list">
+                    <div class="feature">
+                        <span class="feature-icon">🎯</span>
+                        <h3>Easy Booking</h3>
+                        <p>Book your trips in minutes with our simple and fast booking system</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">💵</span>
+                        <h3>Best Prices</h3>
+                        <p>Get the most competitive prices on flights and accommodations</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🌏</span>
+                        <h3>Global Reach</h3>
+                        <p>Access to 180+ countries and thousands of travel packages</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">👨‍💼</span>
+                        <h3>Expert Support</h3>
+                        <p>24/7 customer support from our team of travel experts</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🔒</span>
+                        <h3>Secure & Safe</h3>
+                        <p>Your data and payments are fully protected with encryption</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">⭐</span>
+                        <h3>Top Rated</h3>
+                        <p>Trusted by thousands of travelers worldwide with 4.9/5 rating</p>
+                    </div>
+                </div>
+
+                <div class="mission-statement">
+                    <h3>Our Mission</h3>
+                    <p>At NEXTRIP, we're passionate about helping you discover amazing places around the world. We believe every traveler deserves exceptional service at affordable prices. Our goal is to make travel planning effortless and unforgettable.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section class="destinations" id="destinations">
+            <div class="container">
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-desc">Choose your next adventure</p>
+
+                <div class="destinations-list">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=350&fit=crop" alt="Swiss Alps" class="dest-img">
+                        <div class="dest-content">
+                            <h4>Swiss Alps</h4>
+                            <p>Experience breathtaking mountain scenery, charming villages, and world-class skiing in the heart of the Alps.</p>
+                            <a href="#contact" class="btn-secondary">Book Trip</a>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=350&fit=crop" alt="Bora Bora Beach" class="dest-img">
+                        <div class="dest-content">
+                            <h4>Bora Bora</h4>
+                            <p>Relax in paradise with crystal clear waters, white sand beaches, and luxurious overwater bungalows.</p>
+                            <a href="#contact" class="btn-secondary">Book Trip</a>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500&h=350&fit=crop" alt="Tokyo City" class="dest-img">
+                        <div class="dest-content">
+                            <h4>Tokyo</h4>
+                            <p>Discover the perfect blend of ancient traditions and modern technology in Japan's vibrant capital city.</p>
+                            <a href="#contact" class="btn-secondary">Book Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-desc">Plan your next adventure with us</p>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your travel plans..." rows="5" required></textarea>
+                        <span class="error-msg" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                    <span class="success-msg" id="successMsg"></span>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 NEXTRIP. All Rights Reserved. | Travel Beyond Limits</p>
+            <div class="footer-links">
+                <a href="#home">Privacy Policy</a>
+                <a href="#home">Terms & Conditions</a>
+                <a href="#home">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
